@@ -10,6 +10,7 @@ var horizontalMax			: float = 6.0;
 var verticalMin				: float = -4.0;
 var verticalMax				: float = 4.0;
 var projectile				: Transform;
+var socketProjetile			: Transform;
 
 // Private Variables
 
@@ -33,7 +34,7 @@ function Update () {
 	
 	if (Input.GetKeyDown("space"))
 	{
-		Instantiate(projectile,
+		Instantiate(projectile, socketProjetile.position, socketProjetile.rotation);
 	}
 	
 }
