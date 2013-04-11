@@ -3,6 +3,7 @@
 // Player Script
 
 // Inspector Variables
+var lives					: int 	= 3;
 var playerSpeedVertical		: float = 10.0;
 var playerSpeedHorizontal	: float = 10.0;
 var horizontalMin			: float = -6.0;
