@@ -8,6 +8,7 @@ var initialHeight	:float = 8.0;
 var resetHeight		:float = -8.0;
 var horizontalRange	:float = 7.0;
 var explosion		:Transform;
+var sceneManager	:GameObject;
 
 // Private variable
 private var clone	:Transform;
@@ -36,11 +37,8 @@ function OnTriggerEnter(other: Collider)
 {	
 	if (other.tag == "Player")
 	{
-		var script :script_Player;
-		script = other.GetComponent("script_Player");
-		script.lives -= 1;
 		
-	    // other.GetComponent("script_Player").lives += 5; Why, oh why doesn't it work. 
+	    //(other.GetComponent("script_player") as script_Player).lives -= 1;
 		
 		if (explosion) {
 			clone = Instantiate(explosion,transform.position, transform.rotation);
@@ -48,6 +46,8 @@ function OnTriggerEnter(other: Collider)
 		}
 		
 		ResetPosition();
+		
+		(sceneManager.GetComponent("scriptSceneManager") as scriptSceneManager).DecreaseLives();
 		
 	}
 }
