@@ -50,5 +50,17 @@ function OnTriggerEnter(other: Collider)
 		(sceneManager.GetComponent("scriptSceneManager") as scriptSceneManager).DecreaseLives();
 		
 	}
+	
+	if (other.tag == "shield")
+	{
+		//(other.transform.parent.GetComponent("script_Player") as script_Player).shieldOn = false;
+	
+		if (explosion) {
+			clone = Instantiate(explosion,transform.position, transform.rotation);
+			Destroy(clone.gameObject,2.0);
+		}
+		
+		ResetPosition();
+	}
 }
 

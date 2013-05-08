@@ -2,9 +2,11 @@ using UnityEngine;
 using System.Collections;
 using System;
 
-public class scriptSceneManager : MonoBehaviour {
+public class scriptSceneManager : MonoBehaviour
+{
     // Inspector Variables
     public float gameTime = 60f;
+    public int defaultLives = 3;
     public static int score = 0;
     public static int lives = 3;
 
@@ -18,16 +20,30 @@ public class scriptSceneManager : MonoBehaviour {
 	// Use this for initialization
 	void Start () 
     {
+        ResetGameState();
         InvokeRepeating("CountDown",1f,1f);
 	}
 	
 	// Update is called once per frame
 	void Update () 
     {
-        // Print score
-        Debug.Log("Score: " + score);
-	    
+	    // Check if the player is still alive
+        if (lives <= 0)
+        {
+            Application.LoadLevel("ScreenLose");
+        }
+
+        if (gameTime <= 0)
+        {
+            Application.LoadLevel("ScreenWin");
+        }
 	}
+
+    public void ResetGameState()
+    {
+        lives = defaultLives;
+        score = 0;
+    }
 
     void CountDown()
     {
@@ -49,8 +65,8 @@ public class scriptSceneManager : MonoBehaviour {
 
     void OnGUI()
     {
-        GUI.Label(new Rect(10, 10, 100, 20), "Score: "+score);
-        GUI.Label(new Rect(10, 25, 100, 35), "Lives: "+lives);
-        GUI.Label(new Rect(Screen.width - 75, 10, 100, 20), "Counter:" + gameTime);
+        GUI.Label(new Rect(10f, 10f, 100f, 20f), "Score: "+score);
+        GUI.Label(new Rect(10f, 25f, 100f, 35f), "Lives: "+lives);
+        GUI.Label(new Rect(Screen.width - 75f, 10f, 100f, 20f), "Counter:" + gameTime);
     }
 }

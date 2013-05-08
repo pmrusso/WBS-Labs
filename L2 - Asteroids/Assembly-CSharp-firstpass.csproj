@@ -45,6 +45,12 @@
   </ItemGroup>
   <ItemGroup>
      <Compile Include="Assets\Plugins\scriptSceneManager.cs" />
+     <Compile Include="Assets\Plugins\scriptScreenCredits.cs" />
+     <Compile Include="Assets\Plugins\scriptScreenLoad.cs" />
+     <Compile Include="Assets\Plugins\scriptScreenLose.cs" />
+     <Compile Include="Assets\Plugins\scriptScreenMainMenu.cs" />
+     <Compile Include="Assets\Plugins\scriptScreenWin.cs" />
+     <Compile Include="Assets\Plugins\scriptShield.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

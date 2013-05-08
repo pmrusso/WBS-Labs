@@ -1,0 +1,10 @@
+C:\Users\pmrusso\Documents\WBS-Labs\L2 - Asteroids\obj\Debug\Assembly-CSharp-firstpass.csprojResolveAssemblyReference.cache
+C:\Users\pmrusso\Documents\WBS-Labs\L2 - Asteroids\Temp\bin\Debug\Assembly-CSharp-firstpass.dll
+C:\Users\pmrusso\Documents\WBS-Labs\L2 - Asteroids\Temp\bin\Debug\Assembly-CSharp-firstpass.pdb
+C:\Users\pmrusso\Documents\WBS-Labs\L2 - Asteroids\Temp\bin\Debug\UnityEditor.dll
+C:\Users\pmrusso\Documents\WBS-Labs\L2 - Asteroids\Temp\bin\Debug\UnityEngine.dll
+C:\Users\pmrusso\Documents\WBS-Labs\L2 - Asteroids\Temp\bin\Debug\Mono.Cecil.dll
+C:\Users\pmrusso\Documents\WBS-Labs\L2 - Asteroids\Temp\bin\Debug\nunit.framework.dll
+C:\Users\pmrusso\Documents\WBS-Labs\L2 - Asteroids\Temp\bin\Debug\ICSharpCode.NRefactory.dll
+C:\Users\pmrusso\Documents\WBS-Labs\L2 - Asteroids\obj\Debug\Assembly-CSharp-firstpass.dll
+C:\Users\pmrusso\Documents\WBS-Labs\L2 - Asteroids\obj\Debug\Assembly-CSharp-firstpass.pdb
