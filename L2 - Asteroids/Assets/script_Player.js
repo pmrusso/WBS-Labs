@@ -16,6 +16,7 @@ var numberOfShields			: int = 4;
 var shieldMesh				: Transform;
 var shieldKeyInput			: KeyCode;
 var shieldOn				: boolean = false;
+var socketJet				: Transform;
 
 // Private Variables
 
@@ -41,6 +42,7 @@ function Update () {
 	if (Input.GetKeyDown("space"))
 	{
 		Instantiate(projectile, socketProjetile.position, socketProjetile.rotation);
+		audio.Play();
 	}
 	
 	

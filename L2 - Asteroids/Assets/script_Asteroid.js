@@ -3,12 +3,14 @@
 // Asteroid Script
 
 // Inspector variable
-var asteroidSpeed	:float = 6.0;
-var initialHeight	:float = 8.0;
-var resetHeight		:float = -8.0;
-var horizontalRange	:float = 7.0;
-var explosion		:Transform;
-var sceneManager	:GameObject;
+var asteroidSpeed			:float = 6.0;
+var initialHeight			:float = 8.0;
+var resetHeight				:float = -8.0;
+var horizontalRange			:float = 7.0;
+var explosion				:Transform;
+var sceneManager			:GameObject;
+var shieldDamageAudio		:AudioClip;
+var playerDamageAudio		:AudioClip;
 
 // Private variable
 private var clone	:Transform;
@@ -41,6 +43,8 @@ function OnTriggerEnter(other: Collider)
 	    //(other.GetComponent("script_player") as script_Player).lives -= 1;
 		
 		if (explosion) {
+			audio.clip = playerDamageAudio;
+			audio.Play();
 			clone = Instantiate(explosion,transform.position, transform.rotation);
 			Destroy(clone.gameObject,2.0);
 		}
@@ -56,6 +60,8 @@ function OnTriggerEnter(other: Collider)
 		//(other.transform.parent.GetComponent("script_Player") as script_Player).shieldOn = false;
 	
 		if (explosion) {
+			audio.clip = shieldDamageAudio;
+			audio.Play();
 			clone = Instantiate(explosion,transform.position, transform.rotation);
 			Destroy(clone.gameObject,2.0);
 		}

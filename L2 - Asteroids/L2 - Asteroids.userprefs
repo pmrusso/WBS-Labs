@@ -1,6 +1,12 @@
 ﻿<Properties>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\script_Player.js">
+    <Files>
+      <File FileName="Assets\script_Bullet.js" Line="51" Column="2" />
+      <File FileName="Assets\script_Asteroid.js" Line="56" Column="5" />
+      <File FileName="Assets\script_Player.js" Line="55" Column="57" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>

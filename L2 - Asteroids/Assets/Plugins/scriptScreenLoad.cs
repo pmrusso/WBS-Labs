@@ -31,7 +31,7 @@ public class scriptScreenLoad : MonoBehaviour {
         GUI.Label(new Rect(10f, 30f, 140f, 40f), "Arrow Keys to MOVE");
         GUI.Label(new Rect(10f, 60f, 160f, 40f),"Spacebar to SHOOT");
         GUI.Label(new Rect(10f, 90f, 160f, 40f), "E to activate SHIELD");
-        GUI.Label(new Rect(10f, 90f, 160f, 40f), "ESC to quit the game");
+        GUI.Label(new Rect(10f, 120f, 160f, 40f), "ESC to quit the game");
 
         // End the Group
         GUI.EndGroup();
