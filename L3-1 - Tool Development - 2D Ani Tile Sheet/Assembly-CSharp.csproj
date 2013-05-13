@@ -45,6 +45,10 @@
   </ItemGroup>
   <ItemGroup>
      <Compile Include="Assets\Scripts\step1_uv_offset.cs" />
+     <Compile Include="Assets\Scripts\step2_uv_scale.cs" />
+     <Compile Include="Assets\Scripts\step3_uv_row_column.cs" />
+     <Compile Include="Assets\Scripts\step4_uv_offset_scale.cs" />
+     <Compile Include="Assets\Scripts\step5_uv_offset_scale_fps.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

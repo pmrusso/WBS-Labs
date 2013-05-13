@@ -50,6 +50,8 @@ Five Step Coding Workflow
 	get the offset of the uv's and move them based on time
 	figure out how to find the end of the frame...
 	if at end, then go back to the beginning of the image
+	-	NOTE: Look up Module, check how it works and try
+			:Render.material is where the example is
 	get column and row frame amount...
 	then find the size of the frame (just one frame)
 	create a way to offset the uv's based on the size of a frame and the image
