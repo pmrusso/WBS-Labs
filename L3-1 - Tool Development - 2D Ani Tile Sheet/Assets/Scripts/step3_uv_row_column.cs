@@ -19,6 +19,6 @@ public class step3_uv_row_column : MonoBehaviour
 
 	    renderer.material.mainTextureScale = size;
 
-	    print(size);
+	    //print(size);
 	}
 }
